@@ -1,0 +1,95 @@
+body{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222 ;
+    background-image: url('https://www.shutterstock.com/image-photo/storm-over-belgrade-lightning-above-600w-1152781736.jpg' );
+    background-size: cover;
+    font-size: 100%;
+    text-align: left;
+    
+}
+
+.card   {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 420px;
+    margin: 3em;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+
+
+}
+
+
+button {
+    margin: 3px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    padding: 6px;
+}
+
+
+
+
+input.search-bar{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    text-align: left;
+    width: 70%; 
+}
+
+button:hover{
+    background: #7c7c7c6b;
+
+}
+
+h1.temp{
+    margin: 0;
+    margin-bottom:0.01em ;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+.weather.loading{
+    visibility:hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading::after{
+    visibility: visible;
+    content: "loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
